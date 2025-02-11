@@ -12,7 +12,9 @@ namespace Layout
         public static void ImprimirCabeçalho()
         {
             Console.Clear();
-            Console.ForegroundColor = Console
+            Console.ForegroundColor = ConsoleColor.White;
+
+            string titulo = " GERENCIADOR DE TAREFAS ";
         }
     }
 }

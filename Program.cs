@@ -5,10 +5,7 @@ class Program
 {
     static void Main()
     {
-        Grrenciador gerenciador = new Gerenciador();
-        int opcao;
-
-        do
+        while (true)
         {
             Formatacao.ImprimirCabecalho();
             

@@ -6,37 +6,42 @@ class Program
 {
     static void Main()
     {
-        
+
         Gerenciador gerenciador = new Gerenciador();
 
         while (true)
-        {   
-    
+        {
+            Console.Clear();
+
+            gerenciador.ListarTarefas();
+
             Formatacao.ImprimirCabecalho();
             Formatacao.Cor("\n1 - Adicionar Tarefa\n", ConsoleColor.White);
             Formatacao.Cor("2 - Listar Tarefas\n", ConsoleColor.White);
             Formatacao.Cor("3 - Concluir Tarefa\n", ConsoleColor.White);
             Formatacao.Cor("4 - Remover Tarefa\n", ConsoleColor.White);
             Formatacao.Cor("0 - Sair\n", ConsoleColor.White);
-            Formatacao.Cor("\nEscolha uma opção: ", ConsoleColor.White);
+            Formatacao.Cor("\nEscolha uma opção:\n", ConsoleColor.White);
 
             string opcao = Console.ReadLine();
 
             switch (opcao)
             {
                 case "1":
+                    Console.Clear();
                     Formatacao.Cor("\nDigite a descrição da Tarefa: ", ConsoleColor.White);
                     string descricao = Console.ReadLine();
                     gerenciador.AdicionarTarefa(descricao);
                     break;
 
                 case "2":
-                    Formatacao.Cor("\nTarefas: \n", ConsoleColor.White);
                     gerenciador.ListarTarefas();
                     break;
 
                 case "3":
-                    Formatacao.Cor("\nDigite o Id da Tarefa que deseja concluir: ", ConsoleColor.White);
+                    Console.Clear();
+                    gerenciador.ListarTarefas();
+                    Formatacao.Cor("\nDigite o Id da Tarefa que deseja concluir:\n", ConsoleColor.White);
                     if (int.TryParse(Console.ReadLine(), out int idConcluir))
                         gerenciador.ConcluirTarefa(idConcluir);
                     else
@@ -44,7 +49,9 @@ class Program
                     break;
 
                 case "4":
-                    Formatacao.Cor("\nDigite o ID da Tarefa a remover: ", ConsoleColor.White);
+                    Console.Clear();
+                    gerenciador.ListarTarefas();
+                    Formatacao.Cor("\nDigite o ID da Tarefa a remover:\n", ConsoleColor.White);
                     if (int.TryParse(Console.ReadLine(), out int idRemover))
                         gerenciador.RemoverTarefa(idRemover);
                     else
@@ -56,6 +63,7 @@ class Program
                     return;
 
                 default:
+
                     Formatacao.Cor("\nOpção inválida, tente novamente.\n", ConsoleColor.Red);
                     break;
             }

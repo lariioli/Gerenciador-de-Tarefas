@@ -11,19 +11,15 @@ namespace Layout
         }
         public static void ImprimirCabecalho()
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.White;
 
             string titulo = "GERENCIADOR DE TAREFAS";
             int largura = 40;
-    string borda = new string('=', largura);
-    string espacos = new string(' ', (largura - titulo.Length) / 2);
+            string borda = new string('=', largura);
+            string espacos = new string(' ', (largura - titulo.Length) / 2);
 
-    Console.WriteLine("╔" + borda + "╗");
-    Console.WriteLine("║" + espacos + titulo + espacos + (largura % 2 == 0 ? "" : " ") + "║");
-    Console.WriteLine("╚" + borda + "╝");
-
-    Console.ResetColor();
+            Console.WriteLine("╔" + borda + "╗");
+            Console.WriteLine("║" + espacos + titulo + espacos + (largura % 2 == 0 ? "" : " ") + "║");
+            Console.WriteLine("╚" + borda + "╝");
 
         }
     }

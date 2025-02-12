@@ -17,7 +17,7 @@ namespace Tarefas
 
         public void ExibirTarefa()
         {
-            Formatacao.Cor($"\t[{(Concluida ? "X" : " ")}] id: {Id} - {Descricao}", ConsoleColor.Yellow);
+            Formatacao.Cor($"\n\t[{(Concluida ? "X" : " ")}] id: {Id} - {Descricao}\n", ConsoleColor.Yellow);
         }
     }
 }

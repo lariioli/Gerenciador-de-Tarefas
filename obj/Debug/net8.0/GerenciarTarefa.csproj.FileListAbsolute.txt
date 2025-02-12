@@ -1,0 +1,15 @@
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.AssemblyInfoInputs.cache
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.AssemblyInfo.cs
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.csproj.CoreCompileInputs.cache
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.sourcelink.json
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\bin\Debug\net8.0\GerenciarTarefa.exe
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\bin\Debug\net8.0\GerenciarTarefa.deps.json
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\bin\Debug\net8.0\GerenciarTarefa.runtimeconfig.json
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\bin\Debug\net8.0\GerenciarTarefa.dll
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\bin\Debug\net8.0\GerenciarTarefa.pdb
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.dll
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\refint\GerenciarTarefa.dll
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.pdb
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\GerenciarTarefa.genruntimeconfig.cache
+C:\Users\Lorrayne\Documents\Larissa\Gerenciador-de-Tarefas\obj\Debug\net8.0\ref\GerenciarTarefa.dll

@@ -1,5 +1,6 @@
 ﻿using Layout;
 using GerenciarTarefa;
+using Tarefa;
 
 class Program
 {
@@ -35,7 +36,24 @@ class Program
                 if (int.TryParse(Console.ReadLine(), out int idConcluir))
                 GerenciadorTarefas.ConcluirTarefa(idConcluir);
                 break;
+
+                case "4":
+                Formatacao.Cor("\nDigite o ID da Tarefa a remover: ", ConsoleColor.White);
+                if (int.TryParse(Console.ReadLine(), out int idRemover))
+                GerenciadorTarefas.RemoverTarefa(idRemover);
+                break;
+
+                case "0":
+                Formatacao.Cor("\nSaindo...\n", ConsoleColor.Red);
+                return;
+                default:
+
+                Formatacao.Cor("\nOpção inválida, tente novamente.\n", ConsoleColor.Red);
+                break;
             }
+            Formatacao.Cor("\nPressione Enter para continuar...", ConsoleColor.Green);
+            Console.ReadLine();
+
         }
     }
 }

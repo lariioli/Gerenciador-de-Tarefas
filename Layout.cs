@@ -9,12 +9,17 @@ namespace Layout
             Console.Write(mensagem);
             Console.ResetColor();
         }
-        public static void ImprimirCabeçalho()
+        public static void ImprimirCabecalho()
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.White;
-
             string titulo = " GERENCIADOR DE TAREFAS ";
+
+            int largura = 40;
+            string borda = new string('=', largura);
+            string espacos = new string(' ', (largura - titulo.Length) / 2);
+
+            Formatacao.Cor("╔" + borda + "╗", ConsoleColor.White);
+            Formatacao.Cor("║" + espacos + titulo + espacos + (largura % 2 == 0 ? "" : " ") + "║", ConsoleColor.White);
+            Formatacao.Cor("╚" + borda + "╝", ConsoleColor.White);
         }
     }
 }

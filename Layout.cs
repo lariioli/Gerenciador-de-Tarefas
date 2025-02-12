@@ -15,11 +15,16 @@ namespace Layout
             string titulo = "GERENCIADOR DE TAREFAS";
             int largura = 40;
             string borda = new string('=', largura);
-            string espacos = new string(' ', (largura - titulo.Length) / 2);
+            int posicaoInicial = (Console.WindowWidth - largura - 2) / 2;
 
-            Console.WriteLine("╔" + borda + "╗");
-            Console.WriteLine("║" + espacos + titulo + espacos + (largura % 2 == 0 ? "" : " ") + "║");
-            Console.WriteLine("╚" + borda + "╝");
+
+            string linhaBorda = new string(' ', posicaoInicial) + "╔" + borda + "╗";
+            string linhaTitulo = new string(' ', posicaoInicial) + "║" + titulo.PadLeft((largura + titulo.Length) / 2).PadRight(largura) + "║";
+            string linhaInferior = new string(' ', posicaoInicial) + "╚" + borda + "╝";
+
+            Console.WriteLine(linhaBorda);
+            Console.WriteLine(linhaTitulo);
+            Console.WriteLine(linhaInferior);
 
         }
     }
